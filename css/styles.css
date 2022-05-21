@@ -93,8 +93,8 @@ body {
 
 .back_to_top {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     display: none;
 }
 
@@ -11474,7 +11474,7 @@ p {
 
 .cta {
   /* padding-top: 5rem; */
-  padding-bottom: 5rem;
+  padding-bottom: 1.5rem;
   /* background-color: rgba(230, 167, 86, 0.9); */
 }
 .cta .cta-inner {
