@@ -7,29 +7,26 @@
 window.addEventListener('DOMContentLoaded', event => {
     const listHoursArray = document.body.querySelectorAll('.list-hours li');
     // listHoursArray[new Date().getDay()].classList.add(('today'));
-})
+});
+
+
 
 const click_03 = document.querySelector('#click_03');
 const target_03 = document.querySelector('#target_03');
 
+const click_05 = document.querySelector('#click_05');
+const target_05 = document.querySelector('#target_05');
+
+const click_06 = document.querySelector('#click_06');
+const target_06 = document.querySelector('#target_06');
+
 click_03.addEventListener('click', ()=>{
-    target_03.scrollIntoView({block:'center'});
+    target_03.scrollIntoView({block:'start'});
+});
+click_05.addEventListener('click', ()=>{
+    target_05.scrollIntoView({block:'start'});
+});
+click_06.addEventListener('click', ()=>{
+    target_06.scrollIntoView({block:'start'});
 });
 
-// Initialize and add the map
-function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.031 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-    });
-}
-
-window.initMap = initMap;

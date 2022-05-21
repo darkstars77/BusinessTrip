@@ -90,6 +90,14 @@ body {
 }
 /* my style Start*/
 
+
+.back_to_top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
 .no-line-break {
   overflow:hiddlen; 
   white-space:nowrap;
@@ -111,6 +119,7 @@ body {
   box-shadow: inset 0 -1rem 0 #c69ed3; 
   -10px은 highlight의 두께 */
   text-decoration: underline;
+  background-color: rgb(199, 222, 145);
 }
 
 .logoSize {
@@ -7671,6 +7680,14 @@ textarea.form-control-lg {
   font-size: 1rem !important;
 }
 
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+.fs-8 {
+  font-size: 0.65rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -11382,8 +11399,8 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  /* margin-bottom: 5rem; */
 }
 
 .section-heading {
@@ -11462,8 +11479,8 @@ p {
 }
 .cta .cta-inner {
   position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
+  padding: 1rem;
+  /* margin: 0.5rem; */
 }
 .cta .cta-inner:before {
   border-radius: 0.5rem;
@@ -11501,11 +11518,11 @@ p {
     position: absolute;
     bottom: -2rem;
   }
-  .highlight{
+  /* .highlight{
     display: inline;
     box-shadow: inset 0 -1.5rem 0 #c69ed3; 
     /*-10px은 highlight의 두께*/
-  }
+  } */
 }
 @media (min-width: 1200px) {
   .intro .intro-text {
@@ -11533,7 +11550,7 @@ p {
 }
 
 .list-hours {
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-feature-settings: "tnum";
   font-variant-numeric: tabular-nums;
 }
@@ -11554,6 +11571,9 @@ p {
   }
   .p-5 {
     padding: 3rem !important;
+  }
+  #week-list {
+    font-size: 2rem;
   }
 }
 
