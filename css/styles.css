@@ -90,10 +90,27 @@ body {
 }
 /* my style Start*/
 
+.no-line-break {
+  overflow:hiddlen; 
+  white-space:nowrap;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background-color: #e7e7e8;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
 .highlight{
-  display: inline;
+  /* display: inline;
   box-shadow: inset 0 -1rem 0 #c69ed3; 
-  /*-10px은 highlight의 두께*/
+  -10px은 highlight의 두께 */
+  text-decoration: underline;
 }
 
 .logoSize {
@@ -676,7 +693,7 @@ progress {
   }
   .list-hours {
     width: 65%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 992px) {
@@ -704,8 +721,8 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  /* margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x)); */
 }
 .row > * {
   flex-shrink: 0;
@@ -7467,7 +7484,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 1rem !important;
 }
 
 .px-0 {
@@ -7871,6 +7888,11 @@ textarea.form-control-lg {
 }
 
 .bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-light-grey {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8660,6 +8682,11 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+  .list-hours {
+    /* width: 65%; */
+    font-size: 2rem;
+  }
+
   .float-md-start {
     float: left !important;
   }
@@ -11374,7 +11401,7 @@ p {
 }
 
 .bg-faded {
-  background-color: #f6e1c5;
+  background-color: #e7e7e8;
 }
 
 .btn-xl {
@@ -11429,9 +11456,9 @@ p {
 }
 
 .cta {
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  /* background-color: rgba(230, 167, 86, 0.9); */
 }
 .cta .cta-inner {
   position: relative;
@@ -11474,6 +11501,11 @@ p {
     position: absolute;
     bottom: -2rem;
   }
+  .highlight{
+    display: inline;
+    box-shadow: inset 0 -1.5rem 0 #c69ed3; 
+    /*-10px은 highlight의 두께*/
+  }
 }
 @media (min-width: 1200px) {
   .intro .intro-text {
@@ -11501,7 +11533,7 @@ p {
 }
 
 .list-hours {
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-feature-settings: "tnum";
   font-variant-numeric: tabular-nums;
 }
@@ -11511,14 +11543,17 @@ p {
   margin-bottom: 1rem;
   /* font-style: italic; */
 }
-.list-hours .list-hours-item.today {
+/* .list-hours .list-hours-item.today {
   font-weight: bold;
   color: #e6a756;
-}
+} */
 @media (min-width: 992px) {
   .list-hours {
     width: 65%;
     font-size: 1.1rem;
+  }
+  .p-5 {
+    padding: 3rem !important;
   }
 }
 
