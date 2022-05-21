@@ -90,6 +90,12 @@ body {
 }
 /* my style Start*/
 
+.highlight{
+  display: inline;
+  box-shadow: inset 0 -1rem 0 #c69ed3; 
+  /*-10px은 highlight의 두께*/
+}
+
 .logoSize {
   width: 280px;
   height: 70px;
@@ -572,9 +578,9 @@ progress {
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
-  .display-6 {
+  /* .display-6 {
     font-size: 2.5rem;
-  }
+  } */
 }
 
 .list-unstyled {
@@ -668,6 +674,10 @@ progress {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
+  .list-hours {
+    width: 65%;
+    font-size: 1.1rem;
+  }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
@@ -676,7 +686,11 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1200px;
+  }
+  .list-hours {
+    width: 80%;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 1400px) {
@@ -11487,13 +11501,15 @@ p {
 }
 
 .list-hours {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
 }
 .list-hours .list-hours-item {
   border-bottom: 1px solid rgba(230, 167, 86, 0.5);
   padding-bottom: 0.25rem;
   margin-bottom: 1rem;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .list-hours .list-hours-item.today {
   font-weight: bold;
@@ -11501,7 +11517,7 @@ p {
 }
 @media (min-width: 992px) {
   .list-hours {
-    width: 50%;
+    width: 65%;
     font-size: 1.1rem;
   }
 }
